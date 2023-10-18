@@ -1,0 +1,19 @@
+.hero {
+    background-color: rgba(0, 0, 0, .5);
+    color: #fff;
+    height: 80vh;
+    width: 100%;
+    position: relative;
+    margin-bottom: 4rem;
+}
+
+.hero::before {
+    content: '';
+    /* background: url('../../assets/hero-img'); */
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
