@@ -9,11 +9,83 @@
 
 .hero::before {
     content: '';
-    /* background: url('../../assets/hero-img'); */
+    background: url('../assets/House.jpg') no-repeat center center/cover;
     height: 100%;
     width: 100%;
     position: absolute;
     top: 0;
     left: 0;
     z-index: -1;
+}
+
+.hero .content {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    max-width: 700px;
+    margin: auto;
+    padding: 1rem;
+}
+
+.hero h1 {
+    font-size: 3.5rem;
+    text-transform: capitalize;
+}
+
+.hero .search-text {
+    font-size: 1.5rem;
+    margin: 1.5rem;
+}
+
+.search {
+    display: flex;
+    background: white;
+    color: black;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #ccc;
+    padding: 4px;
+    border-radius: 8px;
+}
+
+.search input[type=text] {
+    border: transparent;
+    background-color: transparent;
+    width: 400px;
+    font-size: 1.2rem;
+    outline: none;
+}
+
+.search label {
+    padding: 0 14px 0 8px;
+}
+
+.search .radio {
+    display: flex;
+    align-items: center;
+}
+
+.search button {
+    background-image: linear-gradient(45deg, rgb(76, 10, 163) 0%, rgb(28, 101, 209) 100%);
+    border: 1px solid #5651e5;
+    color: #fff;
+    padding: 10px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 940px) {
+    .hero{
+        height: 70vh;
+    }
+
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .search input[type=text]{
+        width: 100%;
+    }
 }
