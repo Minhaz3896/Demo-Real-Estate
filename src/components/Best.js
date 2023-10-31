@@ -2,7 +2,7 @@ import React from 'react'
 import './Best.css'
 
 import apt1 from '../assets/apt1.jpg'
-import apt2 from '../assets/apt2.jpg'
+// import apt2 from '../assets/apt2.jpg'
 
 
 
@@ -23,6 +23,7 @@ const Best = () => {
             <img src={apt1} alt=''/>
             <img src={apt1} alt=''/>
         </div>
+        <button className='btn'>View All</button>
     </div>
   )
 }
