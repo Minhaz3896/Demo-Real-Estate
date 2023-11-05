@@ -1,7 +1,8 @@
 .best {
     width: 100%;
-    margin: 4rem 0;
+    padding: 4rem 0;
     text-align: center;
+    background-color: beige;
 }
 
 .best > div {
@@ -31,7 +32,8 @@
 
 @media screen and (max-width: 940px) {
     .best {
-        margin: 1rem;
+       
+        padding: 1rem;
     }
     .best > div p {
         margin: 1rem ;
